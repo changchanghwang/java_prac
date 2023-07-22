@@ -1,7 +1,6 @@
+import array.Method;
 import variable.Variable;
 import datatype.*;
-
-import java.util.Arrays;
 
 public class Main {
   public static void main(String[] args) {
@@ -11,5 +10,7 @@ public class Main {
     primitive.console();
     Reference reference = new Reference();
     reference.console();
+    Method arrayMethod = new Method();
+    arrayMethod.stream();
   }
 }
