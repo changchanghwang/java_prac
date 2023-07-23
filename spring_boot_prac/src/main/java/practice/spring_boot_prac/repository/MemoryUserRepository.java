@@ -1,9 +1,11 @@
 package practice.spring_boot_prac.repository;
 
+import org.springframework.stereotype.Repository;
 import practice.spring_boot_prac.domain.User;
 
 import java.util.*;
 
+@Repository
 public class MemoryUserRepository implements UserRepository{
 
   private static Map<Long, User> store = new HashMap<>();
