@@ -1,14 +1,18 @@
 package practice.spring_boot_prac.service;
 
 import practice.spring_boot_prac.domain.User;
-import practice.spring_boot_prac.repository.MemoryUserRepository;
 import practice.spring_boot_prac.repository.UserRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 public class UserService {
-  private final UserRepository userRepository = new MemoryUserRepository();
+
+  private final UserRepository userRepository;
+
+  public UserService(UserRepository userRepository) {
+    this.userRepository = userRepository;
+  }
 
   /**
    * 회원가입
