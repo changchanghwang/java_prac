@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f4bf4ed7-3e86-4311-89be-d5f95b805eae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_boot_prac/src/main/java/practice/spring_boot_prac/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_boot_prac/src/main/java/practice/spring_boot_prac/controller/HelloController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
