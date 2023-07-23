@@ -1,20 +1,18 @@
 package practice.spring_boot_prac.repository;
 
-import org.springframework.stereotype.Repository;
 import practice.spring_boot_prac.domain.User;
 
 import java.util.*;
 
-@Repository
-public class MemoryUserRepository implements UserRepository{
+public class MemoryUserRepository implements UserRepository {
 
-  private static Map<Long, User> store = new HashMap<>();
+  private static final Map<Long, User> store = new HashMap<>();
   private static long sequence = 0L;
 
   @Override
   public User save(User user) {
     user.setId(++sequence);
-    store.put(user.getId(),user);
+    store.put(user.getId(), user);
     return user;
   }
 

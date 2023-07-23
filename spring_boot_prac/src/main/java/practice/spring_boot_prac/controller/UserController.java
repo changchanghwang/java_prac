@@ -8,7 +8,7 @@ import practice.spring_boot_prac.service.UserService;
 public class UserController {
   private final UserService userService;
 
-  @Autowired //DI. spring container에 있는 해당 객체를 찾아 injection해준다.
+  @Autowired //DI. spring container에 있는 해당 빈을 찾아 injection해준다.
   public UserController(UserService userService) {
     this.userService = userService;
   }
